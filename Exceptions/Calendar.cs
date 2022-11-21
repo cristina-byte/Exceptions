@@ -21,9 +21,6 @@
             _meetings.Add(meeting);
         }
 
-
-        
-
         public void ReadFromFile(string path)
         {
             StreamReader fr = null;
@@ -42,8 +39,7 @@
                             Int32.Parse(date[2])), Int32.Parse(line[3]), new TimeSpan(Int32.Parse(interval[0]), 
                             Int32.Parse(interval[1]), Int32.Parse(interval[2])));
                         AddMeeting(m);
-                    }
-                    
+                    } 
                 }
                 catch(FormatException ex)
                 {
