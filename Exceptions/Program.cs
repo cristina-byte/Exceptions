@@ -42,7 +42,7 @@ namespace Exceptions
             Console.WriteLine("\nOperations with files are supported");
 
             //read data from a file
-            ReadData(calendar,"somefile");
+            ReadData(calendar,"meetings.txt");
 
             //add a new meeting
             try
